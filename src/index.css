@@ -38,7 +38,11 @@ h6 {
 }
 
 .ant-layout.full {
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
+}
+
+.ant-carousel {
+  height: 90%;
 }
 
 code {

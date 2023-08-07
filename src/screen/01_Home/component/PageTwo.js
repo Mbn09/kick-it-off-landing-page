@@ -1,9 +1,10 @@
 import React from "react";
-import { Col, Layout, Row } from "antd";
+import { Col, Typography } from "antd";
+import logo from "../../../config/img/logo.png";
 
 //outsource
 
-const HomePage = () => {
+const PageTwo = () => {
   // -------------------------- VAR -----------------------------
   // -------------------------- STATE ---------------------------
   // -------------------------- REDUX ---------------------------
@@ -12,10 +13,14 @@ const HomePage = () => {
   // -------------------------- RENDER --------------------------
   // -------------------------- MAIN ----------------------------
   return (
-    <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={24}>
-        <Row className="banner" gutter={[0,20]}></Row>
+    <Col span={12} offset={4}>
+        <img
+        style={{ padding: "20px", width: "100%", height: "auto" }}
+        src={logo}
+        alt="logo"
+      />
     </Col>
   );
 };
 
-export default HomePage;
+export default PageTwo;

@@ -45,10 +45,13 @@
 .ant-layout {
   width: 100%;
   background: url(../../../asset/img/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .menu-bar {
-  border: 4px solid aquamarine;
+  border: 2.5px solid aquamarine;
   border-radius: 40px;
   height: 60px;
   width: 70%;
@@ -58,7 +61,7 @@
 .menu-item {
   transform: translate(0, -10%);
   color: white;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .ant-breadcrumb ol {

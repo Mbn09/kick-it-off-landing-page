@@ -1,6 +1,5 @@
 .full {
     min-height: 100vh;
-    /* background: url(../../asset/img/BG.png); */
 }
 
 /* Home Page */
@@ -10,11 +9,6 @@
 
 .banner {
     height: calc(100vh - 80px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px 0;
-    row-gap: 20px;
-    overflow: hidden;
 }
 
 .button-style {

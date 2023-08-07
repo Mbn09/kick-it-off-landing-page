@@ -1,16 +1,22 @@
 import React, { createRef, useEffect, useState } from "react";
-import { Layout, Row, Grid, Col, Button } from "antd";
+import { Layout, Row, Grid, Col, Button, Carousel } from "antd";
 
 // outsource
 import facebookLogo from "../../config/img/facebook-icon.png";
 import instaLogo from "../../config/img/insta-icon.png";
 import tiktokLogo from "../../config/img/tiktok-icon.png";
+import nextBtn from "../../config/img/next-button.png";
 import { BsStars } from "react-icons/bs";
-import HomePage from "./component/HomePage";
+import PageOne from "./component/PageOne";
 
 // style
 import "./home.css";
+
+// component
 import DotsList from "../../component/dots_list";
+import PageTwo from "./component/PageTwo";
+import PageThree from "./component/PageThree";
+import PageFour from "./component/PageFour";
 
 const { Content } = Layout;
 const { useBreakpoint } = Grid;
@@ -22,13 +28,16 @@ const HomeScreen = () => {
     backgroundColor: "transparent",
     border: "none",
   };
-  const data = ["1", "2", "3", "4", "5", "6"];
+  const data = [<PageOne />, <PageTwo />, <PageThree />, <PageFour />];
   const carouselRef = createRef();
   // -------------------------- STATE --------------------------
   const [mobile, setMobile] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   // -------------------------- REDUX ---------------------------
   // -------------------------- FUNCTION ------------------------
+  const onchange = (values) => {
+    setCurrentSlide(values);
+  };
   // -------------------------- EFFECT --------------------------
   useEffect(() => {
     if (screens?.xs) {
@@ -52,19 +61,50 @@ const HomeScreen = () => {
   }, [screens]);
 
   // -------------------------- RENDER --------------------------
-  const renderHomePage = () => {
-    return <HomePage />;
-  };
-
   const renderBody = () => {
-    return <Row>{renderHomePage()}</Row>;
+    return (
+      <>
+        <Carousel
+          effect="scroll"
+          dotPosition={"right"}
+          draggable={true}
+          dots={false}
+          ref={carouselRef}
+          afterChange={onchange}
+        >
+          {data.map((page) => (
+            <div>{page}</div>
+          ))}
+        </Carousel>
+
+        <Row style={{ height: "10%" }}>
+        <Col
+          xs={24}
+          sm={24}
+          md={24}
+          lg={24}
+          xl={24}
+          xxl={24}
+          style={{ textAlign: "center" }}
+        >
+          <Button
+            shape="circle"
+            size="large"
+            onClick={() => carouselRef.current.next()}
+            icon={<img src={nextBtn} alt="Button Icon" />}
+            style={buttonStyle}
+          />
+        </Col>
+        </Row>
+      </>
+    );
   };
 
   const renderLeft = () => {
     return (
       <>
         <Row style={{ height: "30%" }}></Row>
-        <Row gutter={[0, 24]}>
+        <Row gutter={[0, 24]} style={{ height: "40%" }}>
           <Col
             xs={24}
             sm={24}
@@ -77,6 +117,7 @@ const HomeScreen = () => {
             <Button
               shape="circle"
               size="large"
+              disabled
               icon={<BsStars style={{ color: "white", fontSize: "25px" }} />}
               style={buttonStyle}
             />
@@ -141,6 +182,7 @@ const HomeScreen = () => {
             <Button
               shape="circle"
               size="large"
+              disabled
               icon={<BsStars style={{ color: "white", fontSize: "25px" }} />}
               style={buttonStyle}
             />
@@ -156,8 +198,7 @@ const HomeScreen = () => {
       <>
         <Row style={{ height: "35%" }}></Row>
         <Row style={{ height: "30%" }}>
-          <Col span={12} offset={12}
-          >
+          <Col span={12} offset={12}>
             <DotsList data={data} dotRef={carouselRef} current={currentSlide} />
           </Col>
         </Row>
@@ -169,7 +210,7 @@ const HomeScreen = () => {
   return (
     <Layout className="full">
       <Content className="home-content">
-        <Row gutter={[0]}>
+        <Row className="banner">
           <Col xs={3} sm={3} md={3} lg={3} xl={2} xxl={2}>
             {renderLeft()}
           </Col>
