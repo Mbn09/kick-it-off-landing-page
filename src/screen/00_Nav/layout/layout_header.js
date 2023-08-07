@@ -38,7 +38,7 @@ const LayoutHeader = () => {
         onClick={() => toggleDrawer()}
         style={{ padding: 6, borderRadius: 5 }}
       >
-        <FiMenu style={{ fontSize: 18 }} />
+        <FiMenu style={{ fontSize: 25 }} />
       </Button>
     );
   };
@@ -136,7 +136,7 @@ const LayoutHeader = () => {
       className="header-menu"
       style={{ background: "none", height: "80px" }}
     >
-      {screens?.md ? renderDesktop() : renderMobile()}
+      {screens?.xl ? renderDesktop() : renderMobile()}
     </Layout.Header>
   );
 };

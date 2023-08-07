@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
+import { Col, Row } from "antd";
+
 // style
-import "./dots_list.css"
+import "./dots_list.css";
 
 const DotsList = ({ data, dotRef, current }) => {
   // -------------------------- VAR --------------------------
@@ -13,7 +15,7 @@ const DotsList = ({ data, dotRef, current }) => {
     <div className="dots-list">
         {data?.map((item, index) => {
             return (
-                <div style={{margin:"3px", fontSize:"30px"}}
+                <div style={{margin:"10px"}}
                 className={`dot-carousel${current === index ? " active": ""}`}
                 key={index}
                 onClick={() => dotRef?.current?.goTo(index)}
