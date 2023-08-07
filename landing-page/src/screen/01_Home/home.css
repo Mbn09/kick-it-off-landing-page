@@ -1,0 +1,22 @@
+.full {
+    min-height: 100vh;
+    /* background: url(../../asset/img/BG.png); */
+}
+
+/* Home Page */
+.home-content {
+    margin-top: 80px;
+}
+
+.banner {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+    row-gap: 20px;
+    overflow: hidden;
+}
+
+.button-style {
+    align-items: center;
+}

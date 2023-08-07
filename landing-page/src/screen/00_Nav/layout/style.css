@@ -1,0 +1,198 @@
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #f0f2f5;
+}
+.ant-layout-sider {
+  background-color: #fff;
+}
+.ant-layout-sider .logo {
+  height: 52px;
+  margin: 4px;
+  background-color: #fff;
+  text-align: center;
+}
+.ant-layout-sider .logo img {
+  height: 100%;
+}
+
+.header-left {
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.header-left .header-title {
+  font-size: 16px;
+  font-weight: "bold";
+}
+
+.ant-menu,
+.ant-menu a {
+  color: #000;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected a {
+  color: var(--ant-primary-color);
+}
+
+.header-menu {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  top: 20px;
+}
+
+.ant-layout {
+  width: 100%;
+  background: url(../../../asset/img/BG.png);
+}
+
+.menu-bar {
+  border: 4px solid aquamarine;
+  border-radius: 40px;
+  height: 60px;
+  width: 70%;
+  text-align: center 
+}
+
+.menu-item {
+  transform: translate(0, -10%);
+  color: white;
+  font-size: 23px;
+}
+
+.ant-breadcrumb ol {
+  display: inline-flex;
+}
+
+.page-header-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.page-header-container .sub-title h5 {
+  /* color: #fff !important; */
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.page-header-container h1 {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.page-header-container .ant-breadcrumb a:hover,
+.page-header-container .ant-breadcrumb li:last-child,
+.page-header-container .ant-breadcrumb li:last-child a {
+  color: #086e7d;
+}
+
+.ant-layout-footer {
+  background-color: #0a0a0a;
+  color: #dbdbdb;
+  padding-bottom: 0px;
+  padding-top: 50px;
+  z-index: 1;
+}
+.ant-layout-footer .bottom {
+  margin-top: 0px;
+  padding: 22px 0 22px 0;
+  width: 100%;
+  border-top: 1px solid rgba(132, 132, 132, 0.17);
+}
+.ant-layout-footer ul.menu {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 100%;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.ant-layout-footer ul.menu li a {
+  line-height: 28px;
+  color: inherit;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  position: relative;
+  padding-bottom: 6px;
+}
+.ant-layout-footer ul.menu li a:after {
+  content: "";
+  transition: 0.2s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #ccc;
+}
+.ant-layout-footer ul.menu li a:hover:after {
+  width: 100%;
+  background-color: #086e7d;
+}
+.ant-layout-footer img {
+  max-width: 100%;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff !important;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-transform: none;
+  text-align: center;
+  font-family: "BEVIETNAM";
+}
+
+.footer-icon {
+  margin-right: 5px;
+}
+.ant-layout-footer p {
+  text-align: center;
+  font-weight: 400;
+  font-family: "BEVIETNAM";
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.ant-menu-horizontal {
+  border-bottom: 0px;
+}
+
+.drawer-container .ant-drawer-body {
+  padding: 0px;
+}
+
+.drawer-container .ant-drawer-body .arrow-down {
+  display: none;
+}
+
+/* ======HOVER HEADER LIGHT========== */
+
+.header-dark h1,
+.header-dark .ant-breadcrumb li:last-child a,
+.header-dark .ant-breadcrumb li span,
+.header-dark .ant-breadcrumb li span a {
+  color: white !important;
+}
+
+.header-dark .ant-breadcrumb li:first-child a {
+  filter: brightness(80%);
+  opacity: 0.5;
+}
+
+.header-dark .ant-breadcrumb li span a:hover {
+  filter: brightness(100%);
+  opacity: 1;
+}

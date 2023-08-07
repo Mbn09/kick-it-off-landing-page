@@ -1,0 +1,17 @@
+.dots-list {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center; 
+}
+  
+.dots-list .dot-carousel {
+  width: 11px;
+  height: 11px;
+  border-radius: 50px;
+  background-color: #567EEB;
+  cursor: pointer;
+}
+  
+.dots-list .active {
+  background-color: #fff;
+}
