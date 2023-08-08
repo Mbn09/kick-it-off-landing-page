@@ -28,7 +28,7 @@ const HomeScreen = () => {
     backgroundColor: "transparent",
     border: "none",
   };
-  const data = [<PageOne />, <PageTwo />, <PageThree />, <PageFour />];
+  const data = [<PageOne />, <PageTwo />, <PageThree />];
   const carouselRef = createRef();
   // -------------------------- STATE --------------------------
   const [mobile, setMobile] = useState(false);

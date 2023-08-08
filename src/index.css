@@ -45,10 +45,10 @@ h6 {
   height: 90%;
 }
 
-.ant-carousel .slick-track {
+/* .ant-carousel .slick-track {
   top: 100px;
-  /* bottom: 10%; */
-}
+  bottom: 10%;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
