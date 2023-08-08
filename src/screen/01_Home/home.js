@@ -7,13 +7,13 @@ import instaLogo from "../../config/img/insta-icon.png";
 import tiktokLogo from "../../config/img/tiktok-icon.png";
 import nextBtn from "../../config/img/next-button.png";
 import { BsStars } from "react-icons/bs";
-import PageOne from "./component/PageOne";
 
 // style
 import "./home.css";
 
 // component
 import DotsList from "../../component/dots_list";
+import PageOne from "./component/PageOne";
 import PageTwo from "./component/PageTwo";
 import PageThree from "./component/PageThree";
 import PageFour from "./component/PageFour";
@@ -29,6 +29,7 @@ const HomeScreen = () => {
     border: "none",
   };
   const data = [<PageOne />, <PageTwo />, <PageThree />];
+  // const data=[1, 2, 3]
   const carouselRef = createRef();
   // -------------------------- STATE --------------------------
   const [mobile, setMobile] = useState(false);
@@ -73,7 +74,7 @@ const HomeScreen = () => {
           afterChange={onchange}
         >
           {data.map((page) => (
-            <Col span={22} offset={1} style={{ height: "100%", paddingTop: "100px" }}>
+            <Col span={22} offset={1} >
               <div>{page}</div>
             </Col>
           ))}

@@ -65,3 +65,18 @@
   font-Style: italic;
   font-size: 15px;
 }
+
+.page03-content {
+  margin: 80px 20px;
+  border-radius: 0 0 15px 15px;
+  border-top: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.page03-intro {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 80px 30px;
+  margin-bottom: 20px;
+}

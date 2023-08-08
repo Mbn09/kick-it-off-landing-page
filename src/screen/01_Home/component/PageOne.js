@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Layout, Row, Typography } from "antd";
+import { Button, Col, Row, Typography } from "antd";
 import logo from "../../../config/img/logo.png";
 
 //outsource
