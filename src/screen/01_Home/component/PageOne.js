@@ -54,7 +54,7 @@ const PageOne = () => {
         lg={24}
         xl={24}
         xxl={24}
-        style={{ textAlign: "center" }}
+        style={{ textAlign: "center", height: "40%" }}
       >
         {renderLogo()}
       </Col>
@@ -65,7 +65,7 @@ const PageOne = () => {
         lg={24}
         xl={24}
         xxl={24}
-        style={{ textAlign: "center" }}
+        style={{ textAlign: "center", height: "25%" }}
       >
         {renderIntro()}
       </Col>
@@ -76,7 +76,7 @@ const PageOne = () => {
         lg={24}
         xl={24}
         xxl={24}
-        style={{ textAlign: "center" }}
+        style={{ textAlign: "center", height: "25%" }}
       >
         {renderBtn()}
       </Col>

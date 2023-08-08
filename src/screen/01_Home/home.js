@@ -73,13 +73,13 @@ const HomeScreen = () => {
           afterChange={onchange}
         >
           {data.map((page) => (
-            <Col span={22} offset={1} style={{ height: "100%", paddingTop: "120px" }}>
+            <Col span={22} offset={1} style={{ height: "100%", paddingTop: "100px" }}>
               <div>{page}</div>
             </Col>
           ))}
         </Carousel>
 
-        <Row style={{ height: "10%" }}>
+        <Row style={{ height: "auto" }}>
           <Col
             xs={24}
             sm={24}
