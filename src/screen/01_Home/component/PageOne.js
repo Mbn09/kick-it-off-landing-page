@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Layout, Row, Typography } from "antd";
+import { Button, Col, Layout, Row, Typography } from "antd";
 import logo from "../../../config/img/logo.png";
 
 //outsource
@@ -11,15 +11,76 @@ const PageOne = () => {
   // -------------------------- FUNCTION ------------------------
   // -------------------------- EFFECT --------------------------
   // -------------------------- RENDER --------------------------
-  // -------------------------- MAIN ----------------------------
-  return (
-    <Col span={12} offset={4}>
+  const renderLogo = () => {
+    return (
       <img
-        style={{ padding: "20px", width: "100%", height: "auto" }}
+        style={{
+          padding: "0 100px",
+        }}
         src={logo}
         alt="logo"
       />
-    </Col>
+    );
+  };
+
+  const renderIntro = () => {
+    return (
+      <>
+        <Typography
+          style={{ color: "white", fontSize: "20px", fontWeight: "lighter" }}
+        >
+          A comprehensive lifeskill platform providing personalised education{" "}
+          <br />
+          and developing active learing with real-life simulations game
+        </Typography>
+      </>
+    );
+  };
+
+  const renderBtn = () => {
+    return (
+      <>
+        <Button className="enroll-btn">Enroll Now</Button>
+      </>
+    );
+  };
+  // -------------------------- MAIN ----------------------------
+  return (
+    <Row>
+      <Col
+        xs={24}
+        sm={24}
+        md={24}
+        lg={24}
+        xl={24}
+        xxl={24}
+        style={{ textAlign: "center" }}
+      >
+        {renderLogo()}
+      </Col>
+      <Col
+        xs={24}
+        sm={24}
+        md={24}
+        lg={24}
+        xl={24}
+        xxl={24}
+        style={{ textAlign: "center" }}
+      >
+        {renderIntro()}
+      </Col>
+      <Col
+        xs={24}
+        sm={24}
+        md={24}
+        lg={24}
+        xl={24}
+        xxl={24}
+        style={{ textAlign: "center" }}
+      >
+        {renderBtn()}
+      </Col>
+    </Row>
   );
 };
 

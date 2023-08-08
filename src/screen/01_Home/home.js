@@ -73,28 +73,30 @@ const HomeScreen = () => {
           afterChange={onchange}
         >
           {data.map((page) => (
-            <div>{page}</div>
+            <Col span={22} offset={1} style={{ height: "100%", paddingTop: "120px" }}>
+              <div>{page}</div>
+            </Col>
           ))}
         </Carousel>
 
         <Row style={{ height: "10%" }}>
-        <Col
-          xs={24}
-          sm={24}
-          md={24}
-          lg={24}
-          xl={24}
-          xxl={24}
-          style={{ textAlign: "center" }}
-        >
-          <Button
-            shape="circle"
-            size="large"
-            onClick={() => carouselRef.current.next()}
-            icon={<img src={nextBtn} alt="Button Icon" />}
-            style={buttonStyle}
-          />
-        </Col>
+          <Col
+            xs={24}
+            sm={24}
+            md={24}
+            lg={24}
+            xl={24}
+            xxl={24}
+            style={{ textAlign: "center" }}
+          >
+            <Button
+              shape="circle"
+              size="large"
+              onClick={() => carouselRef.current.next()}
+              icon={<img src={nextBtn} alt="Button Icon" />}
+              style={buttonStyle}
+            />
+          </Col>
         </Row>
       </>
     );
@@ -104,7 +106,7 @@ const HomeScreen = () => {
     return (
       <>
         <Row style={{ height: "30%" }}></Row>
-        <Row gutter={[0, 24]} style={{ height: "40%" }}>
+        <Row gutter={[0, 12]} style={{ height: "40%" }}>
           <Col
             xs={24}
             sm={24}
@@ -118,7 +120,7 @@ const HomeScreen = () => {
               shape="circle"
               size="large"
               disabled
-              icon={<BsStars style={{ color: "white", fontSize: "25px" }} />}
+              icon={<BsStars style={{ color: "white", fontSize: "22px" }} />}
               style={buttonStyle}
             />
           </Col>
@@ -133,7 +135,7 @@ const HomeScreen = () => {
           >
             <Button
               shape="circle"
-              size="large"
+              size="medium"
               icon={<img src={facebookLogo} alt="Button Icon" />}
               style={buttonStyle}
             />
@@ -149,7 +151,7 @@ const HomeScreen = () => {
           >
             <Button
               shape="circle"
-              size="large"
+              size="medium"
               icon={<img src={instaLogo} alt="Button Icon" />}
               style={buttonStyle}
             />
@@ -165,7 +167,7 @@ const HomeScreen = () => {
           >
             <Button
               shape="circle"
-              size="large"
+              size="medium"
               icon={<img src={tiktokLogo} alt="Button Icon" />}
               style={buttonStyle}
             />
@@ -183,7 +185,7 @@ const HomeScreen = () => {
               shape="circle"
               size="large"
               disabled
-              icon={<BsStars style={{ color: "white", fontSize: "25px" }} />}
+              icon={<BsStars style={{ color: "white", fontSize: "22px" }} />}
               style={buttonStyle}
             />
           </Col>
@@ -198,7 +200,7 @@ const HomeScreen = () => {
       <>
         <Row style={{ height: "35%" }}></Row>
         <Row style={{ height: "30%" }}>
-          <Col span={12} offset={12}>
+          <Col span={12} offset={6}>
             <DotsList data={data} dotRef={carouselRef} current={currentSlide} />
           </Col>
         </Row>
@@ -214,10 +216,10 @@ const HomeScreen = () => {
           <Col xs={3} sm={3} md={3} lg={3} xl={2} xxl={2}>
             {renderLeft()}
           </Col>
-          <Col xs={18} sm={18} md={18} lg={18} xl={19} xxl={19}>
+          <Col xs={18} sm={18} md={18} lg={18} xl={20} xxl={20}>
             {renderBody()}
           </Col>
-          <Col xs={3} sm={3} md={3} lg={3} xl={3} xxl={3}>
+          <Col xs={3} sm={3} md={3} lg={3} xl={2} xxl={2}>
             {renderRight()}
           </Col>
         </Row>

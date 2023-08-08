@@ -1,16 +1,27 @@
 .full {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 /* Home Page */
 .home-content {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .banner {
-    height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
 }
 
 .button-style {
-    align-items: center;
+  align-items: center;
+}
+
+.enroll-btn {
+  background-color: #446dd9;
+  border-color: #446dd9;
+  color: white;
+  border-radius: 10px;
+  margin: 15px;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
 }

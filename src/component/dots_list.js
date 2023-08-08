@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { Col, Row } from "antd";
 
 // style
 import "./dots_list.css";
@@ -13,15 +12,16 @@ const DotsList = ({ data, dotRef, current }) => {
   // -------------------------- MAIN --------------------------
   return (
     <div className="dots-list">
-        {data?.map((item, index) => {
-            return (
-                <div style={{margin:"10px"}}
-                className={`dot-carousel${current === index ? " active": ""}`}
-                key={index}
-                onClick={() => dotRef?.current?.goTo(index)}
-                ></div>
-            )
-        })}
+      {data?.map((item, index) => {
+        return (
+          <div
+            style={{ margin: "10px" }}
+            className={`dot-carousel${current === index ? " active" : ""}`}
+            key={index}
+            onClick={() => dotRef?.current?.goTo(index)}
+          ></div>
+        );
+      })}
     </div>
   );
 };
