@@ -29,9 +29,9 @@ const PageOne = () => {
         <Typography
           style={{ color: "white", fontSize: "20px", fontWeight: "lighter" }}
         >
-          A comprehensive lifeskill platform providing personalised education{" "}
+          A comprehensive lifeskill platform providing personalised education
           <br />
-          and developing active learing with real-life simulations game
+          and developing active learing with real-life simulation games
         </Typography>
       </>
     );

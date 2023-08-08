@@ -14,8 +14,7 @@ const PageTwo = () => {
     return (
       <>
         <Row>
-          <Typography className="intro-title"
-          >
+          <Typography className="intro-title">
             Hi, welcome to <br />
             <span style={{ color: "#00F8AA" }}>KICK-IT-OFF</span>
           </Typography>
@@ -41,27 +40,51 @@ const PageTwo = () => {
   const renderRight = () => {
     return (
       <>
-        <Row gutter={[16, 16]}>
+        <Row gutter={[48, 24]}>
           <Col span={12}>
-            <div>
-              <p>50</p>
-            </div>
-          </Col>
-          <Col span={12}>
-            <div>
-              <p>50</p>
-            </div>
+            <Typography
+              className="page02-static"
+              style={{ color: "#FFD76E", border: "2px solid #FFD76E" }}
+            >
+              +50
+              <br />
+              <Typography className="page02-static-note">
+                Number of <br/> registered mentees
+              </Typography>
+            </Typography>
           </Col>
 
           <Col span={12}>
-            <div>
-              <p>50</p>
-            </div>
+            <Typography className="page02-static"
+              style={{ color: "#FD20FE", border: "2px solid #FD20FE" }}>
+              +10
+              <br />
+              <Typography className="page02-static-note">
+                Number of <br /> professional mentors
+              </Typography>
+            </Typography>
+          </Col>
+
+          <Col span={12}>
+            <Typography className="page02-static"
+              style={{ color: "#00F8AA", border: "2px solid #00F8AA" }}>
+              89%
+              <br />
+              <Typography className="page02-static-note">
+                Mentees would <br /> recommend KIO
+              </Typography>
+            </Typography>
           </Col>
           <Col span={12}>
-            <div>
-              <p>50</p>
-            </div>
+            <Typography className="page02-static"
+              style={{ color: "#ED523E", border: "2px solid #ED523E" }}>
+              1st
+              <br />
+              <Typography className="page02-static-note">
+                Comprehensive platform <br /> combining interactive <br /> video
+                game in VietNam
+              </Typography>
+            </Typography>
           </Col>
         </Row>
       </>

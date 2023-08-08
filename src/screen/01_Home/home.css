@@ -48,3 +48,20 @@
   color: white;
   font-size: 17px;
 }
+
+.page02-static {
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: #002affb6;
+  width: auto;
+  height: 230px;
+  padding-bottom: 30px;
+}
+.page02-static-note{
+  color: white;
+  font-Family: "BEVIETNAMlight";
+  font-Style: italic;
+  font-size: 15px;
+}
