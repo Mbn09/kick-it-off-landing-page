@@ -3,6 +3,11 @@
   src: local("BEVIETNAMlight"), url("../../asset/font/BEVIETNAM-LIGHT.TTF") format("truetype");
 }
 
+@font-face {
+  font-family: "BEVIETNAMThinItalic";
+  src: local("BEVIETNAMlight"), url("../../asset/font/BEVIETNAM-THINITALIC.TTF") format("truetype");
+}
+
 .full {
   min-height: 100vh;
 }
@@ -33,7 +38,7 @@
 
 .intro-title {
   color: white;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
   padding: 15px 30px;
   margin-bottom: 20px;
@@ -46,42 +51,39 @@
 .intro-body {
   font-family: "BEVIETNAMlight";
   color: white;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .page02-static {
   text-align: center;
-  font-size: 80px;
+  font-size: 85px;
   font-weight: bold;
   border-radius: 15px;
   background-color: #002affb6;
   width: auto;
-  height: 230px;
+  height: 250px;
   padding-bottom: 30px;
+  margin: 0 30px;
 }
 .page02-static-note{
   color: white;
-  font-Family: "BEVIETNAMlight";
-  font-Style: italic;
-  font-size: 15px;
-}
-
-.page03-head{
-  background-color: none;
+  font-Family: "BEVIETNAMThinItalic";
+  font-size: 16px;
 }
 
 .page03-content {
-  margin: 40px 20px;
-  border-radius: 0 0 15px 15px;
+  margin: 70px 10px 35px 10px;
+  border-radius: 0 0 30px 30px;
   border-top: 2px solid white;
   background-color: rgba(255, 255, 255, 0.1);
+  height: auto;
 }
 
 .page03-intro {
   color: white;
-  font-size: 35px;
+  font-size: 37px;
   font-weight: bold;
-  padding: 80px 30px;
+  padding: 60px 10px 60px 40px;
   margin-bottom: 20px;
 }
 
@@ -106,8 +108,15 @@
   display: none;
 }
 
-.page03-head :hover{
+.page03-head :hover {
   background-color: #1246FB;
+}
+.page03-head :hover .page03-right-content-border{
+  border: 2px solid #FFD76E;
+  background-color: none;
+}
+.page03-head :hover .page03-right-content{
+  display: none;
 }
 .page03-head :hover .page03-right-content-hover{
   display: block;

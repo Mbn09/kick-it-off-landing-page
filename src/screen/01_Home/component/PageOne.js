@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Row, Typography } from "antd";
+import { Button, Col, Image, Row, Typography } from "antd";
 import logo from "../../../config/img/logo.png";
 
 //outsource
@@ -12,41 +12,32 @@ const PageOne = () => {
   // -------------------------- EFFECT --------------------------
   // -------------------------- RENDER --------------------------
   const renderLogo = () => {
-    return (
-      <img
-        style={{
-          padding: "0 100px",
-        }}
-        src={logo}
-        alt="logo"
-      />
-    );
+    return <Image width={"60%"} src={logo} alt="logo" />;
   };
 
   const renderIntro = () => {
     return (
-      <>
-        <Typography
-          style={{ color: "white", fontSize: "20px", fontWeight: "lighter" }}
-        >
-          A comprehensive lifeskill platform providing personalised education
-          <br />
-          and developing active learing with real-life simulation games
-        </Typography>
-      </>
+      <Typography
+        style={{
+          color: "white",
+          fontSize: "20px",
+          fontWeight: "lighter",
+          margin: "10px 0"
+        }}
+      >
+        A comprehensive lifeskill platform providing personalised education
+        <br />
+        and developing active learing with real-life simulation games
+      </Typography>
     );
   };
 
   const renderBtn = () => {
-    return (
-      <>
-        <Button className="enroll-btn">Enroll Now</Button>
-      </>
-    );
+    return <Button className="enroll-btn">Enroll Now</Button>;
   };
   // -------------------------- MAIN ----------------------------
   return (
-    <Row style={{ heght: "100%" }}>
+    <Row>
       <Col
         xs={24}
         sm={24}
@@ -54,7 +45,9 @@ const PageOne = () => {
         lg={24}
         xl={24}
         xxl={24}
-        style={{ textAlign: "center", height: "50%" }}
+        style={{
+          textAlign: "center",
+        }}
       >
         {renderLogo()}
       </Col>
@@ -65,7 +58,9 @@ const PageOne = () => {
         lg={24}
         xl={24}
         xxl={24}
-        style={{ textAlign: "center", height: "25%" }}
+        style={{
+          textAlign: "center",
+        }}
       >
         {renderIntro()}
       </Col>
@@ -76,7 +71,9 @@ const PageOne = () => {
         lg={24}
         xl={24}
         xxl={24}
-        style={{ textAlign: "center", height: "25%" }}
+        style={{
+          textAlign: "center",
+        }}
       >
         {renderBtn()}
       </Col>

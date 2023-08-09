@@ -45,6 +45,10 @@ h6 {
   height: 90%;
 }
 
+.ant-carousel .slick-slider .slick-track {
+  height: auto !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

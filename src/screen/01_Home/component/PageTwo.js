@@ -40,23 +40,31 @@ const PageTwo = () => {
   const renderRight = () => {
     return (
       <>
-        <Row gutter={[48, 24]}>
+        <Row gutter={[24, 24]}>
           <Col span={12}>
             <Typography
               className="page02-static"
-              style={{ color: "#FFD76E", border: "2px solid #FFD76E" }}
+              style={{
+                color: "#FFD76E",
+                border: "2px solid #FFD76E",
+              }}
             >
               +50
               <br />
               <Typography className="page02-static-note">
-                Number of <br/> registered mentees
+                Number of <br /> registered mentees
               </Typography>
             </Typography>
           </Col>
 
           <Col span={12}>
-            <Typography className="page02-static"
-              style={{ color: "#FD20FE", border: "2px solid #FD20FE" }}>
+            <Typography
+              className="page02-static"
+              style={{
+                color: "#FD20FE",
+                border: "2px solid #FD20FE",
+              }}
+            >
               +10
               <br />
               <Typography className="page02-static-note">
@@ -66,8 +74,13 @@ const PageTwo = () => {
           </Col>
 
           <Col span={12}>
-            <Typography className="page02-static"
-              style={{ color: "#00F8AA", border: "2px solid #00F8AA" }}>
+            <Typography
+              className="page02-static"
+              style={{
+                color: "#00F8AA",
+                border: "2px solid #00F8AA",
+              }}
+            >
               89%
               <br />
               <Typography className="page02-static-note">
@@ -76,8 +89,13 @@ const PageTwo = () => {
             </Typography>
           </Col>
           <Col span={12}>
-            <Typography className="page02-static"
-              style={{ color: "#ED523E", border: "2px solid #ED523E" }}>
+            <Typography
+              className="page02-static"
+              style={{
+                color: "#ED523E",
+                border: "2px solid #ED523E",
+              }}
+            >
               1st
               <br />
               <Typography className="page02-static-note">
@@ -92,7 +110,7 @@ const PageTwo = () => {
   };
   // -------------------------- MAIN ----------------------------
   return (
-    <Row style={{ heght: "100%" }}>
+    <Row style={{ padding: "10px 30px 0 30px" }}>
       <Col xs={12} sm={12} md={12} lg={12} xl={10} xxl={10}>
         {renderLeft()}
       </Col>

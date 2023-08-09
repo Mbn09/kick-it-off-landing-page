@@ -1,5 +1,5 @@
 import React, { createRef, useEffect, useState } from "react";
-import { Layout, Row, Grid, Col, Button, Carousel } from "antd";
+import { Layout, Row, Grid, Col, Button, Carousel, Typography, Image } from "antd";
 
 // outsource
 import facebookLogo from "../../config/img/facebook-icon.png";
@@ -11,12 +11,17 @@ import { BsStars } from "react-icons/bs";
 // style
 import "./home.css";
 
+import image01 from "../../config/img/head-icon.png";
+import image02 from "../../config/img/heart-icon.png";
+import image03 from "../../config/img/hands-icon.png";
+import image04 from "../../config/img/health-icon.png";
+import logo from "../../config/img/logo.png";
+
 // component
 import DotsList from "../../component/dots_list";
 import PageOne from "./component/PageOne";
 import PageTwo from "./component/PageTwo";
 import PageThree from "./component/PageThree";
-import PageFour from "./component/PageFour";
 
 const { Content } = Layout;
 const { useBreakpoint } = Grid;
@@ -65,22 +70,26 @@ const HomeScreen = () => {
   const renderBody = () => {
     return (
       <>
-        <Carousel
-          effect="scroll"
-          dotPosition={"right"}
-          draggable={true}
-          dots={false}
-          ref={carouselRef}
-          afterChange={onchange}
+        <div
+          style={{ height: "90%", padding: "25px 0" }}
         >
-          {data.map((page) => (
-            <Col span={22} offset={1} >
-              <div>{page}</div>
-            </Col>
-          ))}
-        </Carousel>
+          <Carousel
+            effect="scroll"
+            dotPosition={"right"}
+            draggable={true}
+            dots={false}
+            ref={carouselRef}
+            afterChange={onchange}
+          >
+            {data.map((page) => (
+              <Col span={22} offset={1}>
+                {page}
+              </Col>
+            ))}
+          </Carousel>
+        </div>
 
-        <Row style={{ height: "auto" }}>
+        <Row style={{ height: "10%" }}>
           <Col
             xs={24}
             sm={24}
