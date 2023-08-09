@@ -92,7 +92,7 @@ const PageTwo = () => {
   };
   // -------------------------- MAIN ----------------------------
   return (
-    <Row>
+    <Row style={{ heght: "100%" }}>
       <Col xs={12} sm={12} md={12} lg={12} xl={10} xxl={10}>
         {renderLeft()}
       </Col>

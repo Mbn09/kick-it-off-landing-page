@@ -46,7 +46,7 @@ const PageOne = () => {
   };
   // -------------------------- MAIN ----------------------------
   return (
-    <Row>
+    <Row style={{ heght: "100%" }}>
       <Col
         xs={24}
         sm={24}
@@ -54,7 +54,7 @@ const PageOne = () => {
         lg={24}
         xl={24}
         xxl={24}
-        style={{ textAlign: "center", height: "40%" }}
+        style={{ textAlign: "center", height: "50%" }}
       >
         {renderLogo()}
       </Col>
