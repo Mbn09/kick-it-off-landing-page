@@ -1,5 +1,5 @@
 import React, { createRef, useEffect, useState } from "react";
-import { Layout, Row, Grid, Col, Button, Carousel, Typography, Image } from "antd";
+import { Layout, Row, Grid, Col, Button, Carousel } from "antd";
 
 // outsource
 import facebookLogo from "../../config/img/facebook-icon.png";
@@ -10,12 +10,6 @@ import { BsStars } from "react-icons/bs";
 
 // style
 import "./home.css";
-
-import image01 from "../../config/img/head-icon.png";
-import image02 from "../../config/img/heart-icon.png";
-import image03 from "../../config/img/hands-icon.png";
-import image04 from "../../config/img/health-icon.png";
-import logo from "../../config/img/logo.png";
 
 // component
 import DotsList from "../../component/dots_list";
@@ -147,6 +141,7 @@ const HomeScreen = () => {
               shape="circle"
               size="medium"
               icon={<img src={facebookLogo} alt="Button Icon" />}
+              onClick={() => window.open('https://www.facebook.com/kickitoff.network')}
               style={buttonStyle}
             />
           </Col>
@@ -163,6 +158,7 @@ const HomeScreen = () => {
               shape="circle"
               size="medium"
               icon={<img src={instaLogo} alt="Button Icon" />}
+              onClick={() => window.open('https://www.instagram.com/kickitoff.network?fbclid=IwAR2RZFgnPIIL7qc0n7N7lK5J1h9ecH4cO7w00c8icYMvFrRMnAae1s89Elg')}
               style={buttonStyle}
             />
           </Col>
@@ -179,6 +175,7 @@ const HomeScreen = () => {
               shape="circle"
               size="medium"
               icon={<img src={tiktokLogo} alt="Button Icon" />}
+              onClick={() => window.open('https://www.tiktok.com/@kickitoff.network?lang=vi-VN')}
               style={buttonStyle}
             />
           </Col>

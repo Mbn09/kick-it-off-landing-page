@@ -1,11 +1,13 @@
 @font-face {
   font-family: "BEVIETNAMlight";
-  src: local("BEVIETNAMlight"), url("../../asset/font/BEVIETNAM-LIGHT.TTF") format("truetype");
+  src: local("BEVIETNAMlight"),
+    url("../../asset/font/BEVIETNAM-LIGHT.TTF") format("truetype");
 }
 
 @font-face {
   font-family: "BEVIETNAMThinItalic";
-  src: local("BEVIETNAMlight"), url("../../asset/font/BEVIETNAM-THINITALIC.TTF") format("truetype");
+  src: local("BEVIETNAMlight"),
+    url("../../asset/font/BEVIETNAM-THINITALIC.TTF") format("truetype");
 }
 
 .full {
@@ -65,11 +67,13 @@
   padding-bottom: 30px;
   margin: 0 30px;
 }
-.page02-static-note{
+.page02-static-note {
   color: white;
-  font-Family: "BEVIETNAMThinItalic";
+  font-family: "BEVIETNAMThinItalic";
   font-size: 16px;
 }
+
+/* ====================== */
 
 .page03-content {
   margin: 70px 10px 35px 10px;
@@ -87,20 +91,39 @@
   margin-bottom: 20px;
 }
 
-.page03-right-content-border {
-  background-color: #1246FB;
+.page03-head-img01 {
+  transition: background-color 0.3s;
+  background-color: none;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.page03-head-img01:hover {
+  background-color: #1246fb;
+  border-radius: 0 0 10px 10px;
+}
+
+.page03-right-image-border-img01 {
+  background-color: #1246fb;
   padding: 10px 0;
   border-radius: 15px;
   margin: 20px;
 }
 
-.page03-right-content {
+.page03-right-content-border-img01 {
+  background-color: #1246fb;
+  padding: 10px 0;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.page03-right-content-img01 {
   text-align: center;
   color: white;
   font-size: 17px;
 }
 
-.page03-right-content-hover {
+.page03-right-content-hover-img01 {
   text-align: left;
   font-family: "BEVIETNAMlight";
   color: white;
@@ -108,16 +131,166 @@
   display: none;
 }
 
-.page03-head :hover {
-  background-color: #1246FB;
+.page03-head-img01.hovered .page03-right-image-border-img01 {
+  background-color: #196bff;
 }
-.page03-head :hover .page03-right-content-border{
-  border: 2px solid #FFD76E;
-  background-color: none;
-}
-.page03-head :hover .page03-right-content{
+.page03-head-img01.hovered .page03-right-content-border-img01 {
   display: none;
 }
-.page03-head :hover .page03-right-content-hover{
+.page03-head-img01.hovered .page03-right-content-hover-img01 {
+  display: block;
+}
+
+/* ======================= */
+
+.page03-head-img02 {
+  transition: background-color 0.3s;
+  background-color: none;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.page03-head-img02:hover {
+  background-color: #1246fb;
+  border-radius: 0 10px 10px 0;
+}
+
+.page03-right-image-border-img02 {
+  background-color: #1246fb;
+  padding: 10px 0;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.page03-right-content-border-img02 {
+  background-color: #1246fb;
+  padding: 10px 0;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.page03-right-content-img02 {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.page03-right-content-hover-img02 {
+  text-align: left;
+  font-family: "BEVIETNAMlight";
+  color: white;
+  font-size: 12px;
+  display: none;
+}
+
+.page03-head-img02.hovered .page03-right-image-border-img02 {
+  background-color: #196bff;
+}
+.page03-head-img02.hovered .page03-right-content-border-img02 {
+  display: none;
+}
+.page03-head-img02.hovered .page03-right-content-hover-img02 {
+  display: block;
+}
+/* ========================== */
+
+.page03-head-img03 {
+  transition: background-color 0.3s;
+  background-color: none;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.page03-head-img03:hover {
+  background-color: #1246fb;
+  border-radius: 0 10px 10px 0;
+}
+
+.page03-right-image-border-img03 {
+  background-color: #1246fb;
+  padding: 10px 0;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.page03-right-content-border-img03 {
+  background-color: #1246fb;
+  padding: 10px 0;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.page03-right-content-img03 {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.page03-right-content-hover-img03 {
+  text-align: left;
+  font-family: "BEVIETNAMlight";
+  color: white;
+  font-size: 12px;
+  display: none;
+}
+
+.page03-head-img03.hovered .page03-right-image-border-img03 {
+  background-color: #196bff;
+}
+.page03-head-img03.hovered .page03-right-content-border-img03 {
+  display: none;
+}
+.page03-head-img03.hovered .page03-right-content-hover-img03 {
+  display: block;
+}
+/* ============================ */
+
+.page03-head-img04 {
+  transition: background-color 0.3s;
+  background-color: none;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.page03-head-img04:hover {
+  background-color: #1246fb;
+  border-radius: 0 10px 10px 0;
+}
+
+.page03-right-image-border-img04 {
+  background-color: #1246fb;
+  padding: 10px 0;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.page03-right-content-border-img04 {
+  background-color: #1246fb;
+  padding: 10px 0;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.page03-right-content-img04 {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.page03-right-content-hover-img04 {
+  text-align: left;
+  font-family: "BEVIETNAMlight";
+  color: white;
+  font-size: 12px;
+  display: none;
+}
+
+.page03-head-img04.hovered .page03-right-image-border-img04 {
+  background-color: #196bff;
+}
+.page03-head-img04.hovered .page03-right-content-border-img04 {
+  display: none;
+}
+.page03-head-img04.hovered .page03-right-content-hover-img04 {
   display: block;
 }
